@@ -1,0 +1,213 @@
+{
+  "system-security-plan": {
+    "uuid": "6d1a2f0e-3c7b-4a9e-8f11-2b4c6d8e0a35",
+    "metadata": {
+      "title": "TEMPLATE — System Security Plan for a high-risk AI system (Annex III)",
+      "published": "2026-07-27T00:00:00Z",
+      "last-modified": "2026-07-27T00:00:00Z",
+      "version": "0.1.0",
+      "oscal-version": "1.1.2",
+      "props": [
+        {
+          "name": "document-status",
+          "value": "template",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "regulation",
+          "value": "Regulation (EU) 2024/1689",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "regulation-short-title",
+          "value": "Artificial Intelligence Act",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "consolidated-as-amended-by",
+          "value": "Regulation (EU) 2026/1744",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "amendment-in-force",
+          "value": "2026-07-27",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "structure-verified",
+          "value": "2026-07-27",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+          "rel": "canonical",
+          "text": "Official Journal version of Regulation (EU) 2024/1689"
+        },
+        {
+          "href": "https://eur-lex.europa.eu/eli/reg/2026/1744/oj",
+          "rel": "reference",
+          "text": "Regulation (EU) 2026/1744 (Digital Omnibus on AI), in force 27 July 2026"
+        }
+      ],
+      "roles": [
+        {
+          "id": "catalog-maintainer",
+          "title": "Catalog maintainer"
+        },
+        {
+          "id": "provider",
+          "title": "Provider of an AI system or general-purpose AI model",
+          "description": "As defined in Article 3(3) of Regulation (EU) 2024/1689."
+        },
+        {
+          "id": "deployer",
+          "title": "Deployer of an AI system",
+          "description": "As defined in Article 3(4) of Regulation (EU) 2024/1689."
+        },
+        {
+          "id": "importer",
+          "title": "Importer",
+          "description": "As defined in Article 3(6) of Regulation (EU) 2024/1689."
+        },
+        {
+          "id": "distributor",
+          "title": "Distributor",
+          "description": "As defined in Article 3(7) of Regulation (EU) 2024/1689."
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "457bad87-0bec-4ae7-92b8-69d99b28c03e",
+          "type": "organization",
+          "name": "eu-ai-act-oscal maintainers"
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "catalog-maintainer",
+          "party-uuids": [
+            "457bad87-0bec-4ae7-92b8-69d99b28c03e"
+          ]
+        }
+      ],
+      "remarks": "A deliberately minimal OSCAL system-security-plan whose only purpose is to give the assessment plan in this repository a valid import-ssp target and to show a consumer where their own system description belongs. Replace every placeholder before use. Nothing in this file asserts anything about a real system."
+    },
+    "import-profile": {
+      "href": "#1e5d9a3c-77b2-4f60-9c8d-53a1e4b7c206"
+    },
+    "system-characteristics": {
+      "system-ids": [
+        {
+          "identifier-type": "https://ietf.org/rfc/rfc4122",
+          "id": "00000000-0000-4000-8000-000000000000"
+        }
+      ],
+      "system-name": "PLACEHOLDER — name of the high-risk AI system under assessment",
+      "description": "PLACEHOLDER — replace with the system description required by Annex IV(1). This template asserts nothing about any real system.",
+      "security-sensitivity-level": "high",
+      "system-information": {
+        "information-types": [
+          {
+            "uuid": "8baeed92-1146-4d36-ba2e-731af9c6285b",
+            "title": "PLACEHOLDER — information processed by the AI system",
+            "description": "PLACEHOLDER — describe the input data categories and any special categories of personal data, per Article 10.",
+            "confidentiality-impact": {
+              "base": "fips-199-moderate"
+            },
+            "integrity-impact": {
+              "base": "fips-199-moderate"
+            },
+            "availability-impact": {
+              "base": "fips-199-moderate"
+            }
+          }
+        ]
+      },
+      "security-impact-level": {
+        "security-objective-confidentiality": "moderate",
+        "security-objective-integrity": "moderate",
+        "security-objective-availability": "moderate"
+      },
+      "status": {
+        "state": "under-development",
+        "remarks": "Template. Not a description of an operational system."
+      },
+      "authorization-boundary": {
+        "description": "PLACEHOLDER — describe the boundary of the AI system as placed on the market or put into service, including integrated general-purpose AI models and third-party components (Article 25)."
+      },
+      "props": [
+        {
+          "name": "risk-classification",
+          "value": "high-risk (Article 6(2) / Annex III)",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "operator-role",
+          "value": "provider",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        }
+      ]
+    },
+    "system-implementation": {
+      "users": [
+        {
+          "uuid": "f3455663-e7a4-4880-bc13-9c7d4704fdfa",
+          "title": "PLACEHOLDER — human oversight role (Article 14)",
+          "role-ids": [
+            "provider"
+          ],
+          "authorized-privileges": [
+            {
+              "title": "Interrupt or halt system operation",
+              "functions-performed": [
+                "stop-button or equivalent safe-state interruption"
+              ]
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "uuid": "74e2ae73-b6cd-467c-9da9-53ae3491f373",
+          "type": "software",
+          "title": "PLACEHOLDER — the high-risk AI system",
+          "description": "PLACEHOLDER — replace with the component under assessment.",
+          "status": {
+            "state": "under-development"
+          }
+        }
+      ]
+    },
+    "control-implementation": {
+      "description": "PLACEHOLDER — one implemented-requirement per control in the imported profile. Two are stubbed to show the shape; a real plan enumerates all of them.",
+      "implemented-requirements": [
+        {
+          "uuid": "3c838c74-07e7-41b0-973f-a5f0a9d7980f",
+          "control-id": "aia-9",
+          "remarks": "PLACEHOLDER — describe the risk management system and where its documentation lives."
+        },
+        {
+          "uuid": "bf509ea5-9d65-41a5-8ee3-4b9649c5d826",
+          "control-id": "aia-73",
+          "remarks": "PLACEHOLDER — describe the serious-incident detection and reporting procedure, including the routing that meets the 2-day, 10-day and 15-day deadlines."
+        }
+      ]
+    },
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "1e5d9a3c-77b2-4f60-9c8d-53a1e4b7c206",
+          "title": "EU AI Act — High-Risk AI System Provider (Annex III) profile",
+          "rlinks": [
+            {
+              "href": "../../../profiles/high-risk-provider-annex-iii/profile.json",
+              "media-type": "application/oscal.profile+json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

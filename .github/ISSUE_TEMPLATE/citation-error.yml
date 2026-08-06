@@ -1,0 +1,21 @@
+name: Citation error
+description: An article number, paragraph, annex reference or date is wrong
+labels: [citation, accuracy]
+body:
+  - type: input
+    id: control
+    attributes:
+      label: Control id
+      placeholder: aia-73
+    validations: {required: true}
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What this catalog says
+    validations: {required: true}
+  - type: textarea
+    id: correct
+    attributes:
+      label: What the Official Journal text says
+      description: Quote the text and link to it on EUR-Lex.
+    validations: {required: true}

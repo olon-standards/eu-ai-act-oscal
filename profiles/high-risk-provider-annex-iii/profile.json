@@ -1,0 +1,243 @@
+{
+  "profile": {
+    "uuid": "42668d0d-860e-4316-a855-a32a6b8b907c",
+    "metadata": {
+      "title": "EU AI Act — High-Risk AI System Provider (Annex III, applicable 2 December 2027)",
+      "published": "2026-07-27T00:00:00Z",
+      "last-modified": "2026-07-27T00:00:00Z",
+      "version": "0.1.0",
+      "oscal-version": "1.1.2",
+      "props": [
+        {
+          "name": "obligation-window",
+          "value": "2027-12-02",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "obligation-window-original",
+          "value": "2026-08-02",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "applies-to",
+          "value": "provider",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "deferred-by",
+          "value": "Regulation (EU) 2026/1744",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "risk-tier",
+          "value": "high-risk",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "classification-basis",
+          "value": "Article 6(2) / Annex III",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "regulation",
+          "value": "Regulation (EU) 2024/1689",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "regulation-short-title",
+          "value": "Artificial Intelligence Act",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "consolidated-as-amended-by",
+          "value": "Regulation (EU) 2026/1744",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "amendment-in-force",
+          "value": "2026-07-27",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "structure-verified",
+          "value": "2026-07-27",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        }
+      ],
+      "links": [
+        {
+          "href": "#89abfda4-58f4-47cc-b6d9-d7a397aa6005",
+          "rel": "canonical",
+          "text": "Official Journal version of Regulation (EU) 2024/1689"
+        },
+        {
+          "href": "https://eur-lex.europa.eu/eli/reg/2026/1744/oj",
+          "rel": "reference",
+          "text": "Regulation (EU) 2026/1744 (Digital Omnibus on AI), in force 27 July 2026"
+        }
+      ],
+      "roles": [
+        {
+          "id": "catalog-maintainer",
+          "title": "Catalog maintainer"
+        },
+        {
+          "id": "provider",
+          "title": "Provider of an AI system or general-purpose AI model",
+          "description": "As defined in Article 3(3) of Regulation (EU) 2024/1689."
+        },
+        {
+          "id": "deployer",
+          "title": "Deployer of an AI system",
+          "description": "As defined in Article 3(4) of Regulation (EU) 2024/1689."
+        },
+        {
+          "id": "importer",
+          "title": "Importer",
+          "description": "As defined in Article 3(6) of Regulation (EU) 2024/1689."
+        },
+        {
+          "id": "distributor",
+          "title": "Distributor",
+          "description": "As defined in Article 3(7) of Regulation (EU) 2024/1689."
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "457bad87-0bec-4ae7-92b8-69d99b28c03e",
+          "type": "organization",
+          "name": "eu-ai-act-oscal maintainers"
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "catalog-maintainer",
+          "party-uuids": [
+            "457bad87-0bec-4ae7-92b8-69d99b28c03e"
+          ]
+        }
+      ],
+      "remarks": "The obligation set that applies to a provider of an AI system classified as high-risk under Article 6(2) (Annex III) from 2 December 2027. That date is the one set by Regulation (EU) 2026/1744, which deferred it from 2 August 2026; any readiness plan still working to the August 2026 date is working to a superseded deadline. Statutory parameters are pre-set to the values fixed by the Regulation and must not be relaxed. Organisation-defined parameters (risk-management review interval, accuracy metric and threshold, robustness test interval, quality-management review interval, technical-documentation review interval) are deliberately left unset: a consumer of this profile is expected to set them, and an assessment that finds them unset has found a real gap. Article 50 is included because a high-risk system may independently be in scope for the transparency obligations. Providers of systems high-risk under Article 6(1) (Annex I products) should note the 2 August 2027 application date for that limb."
+    },
+    "imports": [
+      {
+        "href": "#fb78cce8-d1de-47f5-94c7-55e753f9eb12",
+        "include-controls": [
+          {
+            "with-ids": [
+              "aia-1",
+              "aia-2",
+              "aia-3",
+              "aia-4",
+              "aia-4a",
+              "aia-5.1.a",
+              "aia-5.1.b",
+              "aia-5.1.ba",
+              "aia-5.1.bb",
+              "aia-5.1.c",
+              "aia-5.1.d",
+              "aia-5.1.e",
+              "aia-5.1.f",
+              "aia-5.1.g",
+              "aia-5.1.h",
+              "aia-6",
+              "aia-8",
+              "aia-9",
+              "aia-10",
+              "aia-11",
+              "aia-12",
+              "aia-13",
+              "aia-14",
+              "aia-15",
+              "aia-16",
+              "aia-17",
+              "aia-18",
+              "aia-19",
+              "aia-20",
+              "aia-21",
+              "aia-22",
+              "aia-25",
+              "aia-43",
+              "aia-47",
+              "aia-48",
+              "aia-49",
+              "aia-50",
+              "aia-72",
+              "aia-73",
+              "aia-99"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "as-is": true
+    },
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "fb78cce8-d1de-47f5-94c7-55e753f9eb12",
+          "title": "EU AI Act OSCAL Catalog",
+          "rlinks": [
+            {
+              "href": "trestle://catalogs/eu-ai-act/catalog.json",
+              "media-type": "application/oscal.catalog+json"
+            },
+            {
+              "href": "../../catalogs/eu-ai-act/catalog.json",
+              "media-type": "application/oscal.catalog+json"
+            }
+          ]
+        },
+        {
+          "uuid": "89abfda4-58f4-47cc-b6d9-d7a397aa6005",
+          "title": "Regulation (EU) 2024/1689 (Artificial Intelligence Act) — Official Journal version",
+          "description": "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence. The Official Journal text is the sole authoritative source; this catalog is a derived, non-authoritative structural representation.",
+          "rlinks": [
+            {
+              "href": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng"
+            },
+            {
+              "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401689",
+              "media-type": "application/pdf"
+            }
+          ]
+        }
+      ]
+    },
+    "modify": {
+      "set-parameters": [
+        {
+          "param-id": "aia-18_prm_1",
+          "values": [
+            "10 years"
+          ]
+        },
+        {
+          "param-id": "aia-19_prm_1",
+          "values": [
+            "6 months"
+          ]
+        },
+        {
+          "param-id": "aia-73_prm_1",
+          "values": [
+            "15 days"
+          ]
+        },
+        {
+          "param-id": "aia-73_prm_2",
+          "values": [
+            "2 days"
+          ]
+        },
+        {
+          "param-id": "aia-73_prm_3",
+          "values": [
+            "10 days"
+          ]
+        }
+      ]
+    }
+  }
+}

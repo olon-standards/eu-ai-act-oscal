@@ -1,0 +1,16 @@
+name: Missing or mis-scoped obligation
+description: An operator-facing obligation is missing, or a control assigns a duty wrongly
+labels: [scope]
+body:
+  - type: textarea
+    id: article
+    attributes:
+      label: Article and obligation
+    validations: {required: true}
+  - type: checkboxes
+    id: scope-checked
+    attributes:
+      label: Pre-flight
+      options:
+        - label: I have read docs/SCOPE.md and this is not deliberately out of scope
+          required: true

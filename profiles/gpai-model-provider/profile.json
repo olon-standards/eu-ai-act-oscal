@@ -1,0 +1,191 @@
+{
+  "profile": {
+    "uuid": "089749af-61ef-49bb-b7d5-891622df0795",
+    "metadata": {
+      "title": "EU AI Act — General-Purpose AI Model Provider (applicable since 2 August 2025)",
+      "published": "2026-07-27T00:00:00Z",
+      "last-modified": "2026-07-27T00:00:00Z",
+      "version": "0.1.0",
+      "oscal-version": "1.1.2",
+      "props": [
+        {
+          "name": "obligation-window",
+          "value": "2025-08-02",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "applies-to",
+          "value": "gpai-provider",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "risk-tier",
+          "value": "gpai",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "regulation",
+          "value": "Regulation (EU) 2024/1689",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "regulation-short-title",
+          "value": "Artificial Intelligence Act",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "consolidated-as-amended-by",
+          "value": "Regulation (EU) 2026/1744",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "amendment-in-force",
+          "value": "2026-07-27",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "structure-verified",
+          "value": "2026-07-27",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        }
+      ],
+      "links": [
+        {
+          "href": "#89abfda4-58f4-47cc-b6d9-d7a397aa6005",
+          "rel": "canonical",
+          "text": "Official Journal version of Regulation (EU) 2024/1689"
+        },
+        {
+          "href": "https://eur-lex.europa.eu/eli/reg/2026/1744/oj",
+          "rel": "reference",
+          "text": "Regulation (EU) 2026/1744 (Digital Omnibus on AI), in force 27 July 2026"
+        }
+      ],
+      "roles": [
+        {
+          "id": "catalog-maintainer",
+          "title": "Catalog maintainer"
+        },
+        {
+          "id": "provider",
+          "title": "Provider of an AI system or general-purpose AI model",
+          "description": "As defined in Article 3(3) of Regulation (EU) 2024/1689."
+        },
+        {
+          "id": "deployer",
+          "title": "Deployer of an AI system",
+          "description": "As defined in Article 3(4) of Regulation (EU) 2024/1689."
+        },
+        {
+          "id": "importer",
+          "title": "Importer",
+          "description": "As defined in Article 3(6) of Regulation (EU) 2024/1689."
+        },
+        {
+          "id": "distributor",
+          "title": "Distributor",
+          "description": "As defined in Article 3(7) of Regulation (EU) 2024/1689."
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "457bad87-0bec-4ae7-92b8-69d99b28c03e",
+          "type": "organization",
+          "name": "eu-ai-act-oscal maintainers"
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "catalog-maintainer",
+          "party-uuids": [
+            "457bad87-0bec-4ae7-92b8-69d99b28c03e"
+          ]
+        }
+      ],
+      "remarks": "The obligation set that has applied to providers of general-purpose AI models since 2 August 2025. Article 55 applies only where the model is classified as a general-purpose AI model with systemic risk under Article 51; include it and record the classification determination either way. Article 50(2) is included because a provider of a general-purpose AI system generating synthetic content carries the machine-readable marking obligation independently of model classification. The Article 51(2) compute threshold is amendable by delegated act — verify the currently applicable value before relying on the pre-set parameter."
+    },
+    "imports": [
+      {
+        "href": "#fb78cce8-d1de-47f5-94c7-55e753f9eb12",
+        "include-controls": [
+          {
+            "with-ids": [
+              "aia-1",
+              "aia-2",
+              "aia-3",
+              "aia-4",
+              "aia-4a",
+              "aia-5.1.a",
+              "aia-5.1.b",
+              "aia-5.1.ba",
+              "aia-5.1.bb",
+              "aia-5.1.c",
+              "aia-5.1.d",
+              "aia-5.1.e",
+              "aia-5.1.f",
+              "aia-5.1.g",
+              "aia-5.1.h",
+              "aia-51",
+              "aia-53",
+              "aia-54",
+              "aia-55",
+              "aia-50",
+              "aia-99"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "as-is": true
+    },
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "fb78cce8-d1de-47f5-94c7-55e753f9eb12",
+          "title": "EU AI Act OSCAL Catalog",
+          "rlinks": [
+            {
+              "href": "trestle://catalogs/eu-ai-act/catalog.json",
+              "media-type": "application/oscal.catalog+json"
+            },
+            {
+              "href": "../../catalogs/eu-ai-act/catalog.json",
+              "media-type": "application/oscal.catalog+json"
+            }
+          ]
+        },
+        {
+          "uuid": "89abfda4-58f4-47cc-b6d9-d7a397aa6005",
+          "title": "Regulation (EU) 2024/1689 (Artificial Intelligence Act) — Official Journal version",
+          "description": "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence. The Official Journal text is the sole authoritative source; this catalog is a derived, non-authoritative structural representation.",
+          "rlinks": [
+            {
+              "href": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng"
+            },
+            {
+              "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401689",
+              "media-type": "application/pdf"
+            }
+          ]
+        }
+      ]
+    },
+    "modify": {
+      "set-parameters": [
+        {
+          "param-id": "aia-51_prm_1",
+          "values": [
+            "10^25 floating point operations"
+          ]
+        },
+        {
+          "param-id": "aia-51_prm_2",
+          "values": [
+            "2 weeks"
+          ]
+        }
+      ]
+    }
+  }
+}

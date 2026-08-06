@@ -1,0 +1,221 @@
+{
+  "assessment-plan": {
+    "uuid": "4fc4e5fc-cc60-43f1-9bb0-5a01330da500",
+    "metadata": {
+      "title": "EU AI Act — High-Risk AI System Provider Readiness Assessment Plan (Annex III, 2 August 2026)",
+      "published": "2026-07-27T00:00:00Z",
+      "last-modified": "2026-07-27T00:00:00Z",
+      "version": "0.1.0",
+      "oscal-version": "1.1.2",
+      "props": [
+        {
+          "name": "regulation",
+          "value": "Regulation (EU) 2024/1689",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "regulation-short-title",
+          "value": "Artificial Intelligence Act",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "consolidated-as-amended-by",
+          "value": "Regulation (EU) 2026/1744",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "amendment-in-force",
+          "value": "2026-07-27",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        },
+        {
+          "name": "structure-verified",
+          "value": "2026-07-27",
+          "ns": "https://w3id.org/eu-ai-act-oscal/ns"
+        }
+      ],
+      "links": [
+        {
+          "href": "#89abfda4-58f4-47cc-b6d9-d7a397aa6005",
+          "rel": "canonical",
+          "text": "Official Journal version of Regulation (EU) 2024/1689"
+        },
+        {
+          "href": "https://eur-lex.europa.eu/eli/reg/2026/1744/oj",
+          "rel": "reference",
+          "text": "Regulation (EU) 2026/1744 (Digital Omnibus on AI), in force 27 July 2026"
+        }
+      ],
+      "roles": [
+        {
+          "id": "catalog-maintainer",
+          "title": "Catalog maintainer"
+        },
+        {
+          "id": "provider",
+          "title": "Provider of an AI system or general-purpose AI model",
+          "description": "As defined in Article 3(3) of Regulation (EU) 2024/1689."
+        },
+        {
+          "id": "deployer",
+          "title": "Deployer of an AI system",
+          "description": "As defined in Article 3(4) of Regulation (EU) 2024/1689."
+        },
+        {
+          "id": "importer",
+          "title": "Importer",
+          "description": "As defined in Article 3(6) of Regulation (EU) 2024/1689."
+        },
+        {
+          "id": "distributor",
+          "title": "Distributor",
+          "description": "As defined in Article 3(7) of Regulation (EU) 2024/1689."
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "457bad87-0bec-4ae7-92b8-69d99b28c03e",
+          "type": "organization",
+          "name": "eu-ai-act-oscal maintainers"
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "catalog-maintainer",
+          "party-uuids": [
+            "457bad87-0bec-4ae7-92b8-69d99b28c03e"
+          ]
+        }
+      ],
+      "remarks": "A reusable assessment plan for determining whether a provider of an Annex III high-risk AI system is ready for the 2 August 2026 application date. The plan is examine-led: the objective is to establish whether the required artefacts exist, are current, and are internally consistent — not to certify conformity, which only the applicable conformity assessment procedure under Article 43 can do."
+    },
+    "import-ssp": {
+      "href": "#6d1a2f0e-3c7b-4a9e-8f11-2b4c6d8e0a35"
+    },
+    "terms-and-conditions": {
+      "parts": [
+        {
+          "name": "scope",
+          "title": "What this plan does and does not establish",
+          "prose": "This plan establishes documentary and procedural readiness against the imported profile. It does not constitute a conformity assessment under Article 43, an EU declaration of conformity under Article 47, or legal advice. A finding of 'satisfied' means the assessor examined evidence sufficient to conclude the obligation is addressed; it does not warrant that a market surveillance authority would reach the same conclusion."
+        },
+        {
+          "name": "objectivity",
+          "title": "Assessor independence",
+          "prose": "Where the assessor is the provider's own staff, record that fact. Article 43 conformity assessment requirements are unaffected by any self-assessment performed under this plan."
+        }
+      ]
+    },
+    "reviewed-controls": {
+      "control-selections": [
+        {
+          "description": "All controls in the high-risk provider (Annex III) profile.",
+          "include-all": {}
+        }
+      ]
+    },
+    "assessment-subjects": [
+      {
+        "type": "component",
+        "description": "The high-risk AI system identified in the imported system security plan, together with its technical documentation, quality management system records, and logs.",
+        "include-all": {}
+      }
+    ],
+    "assessment-assets": {
+      "assessment-platforms": [
+        {
+          "uuid": "a681f343-28f2-4c35-b725-eaec8f0745c6",
+          "title": "OSCAL toolchain used to resolve the profile and record results",
+          "uses-components": [
+            {
+              "component-uuid": "ff2294a8-9e75-4542-b5a2-e852e15d7086"
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "uuid": "ff2294a8-9e75-4542-b5a2-e852e15d7086",
+          "type": "validation",
+          "title": "OSCAL-based readiness assessment tooling",
+          "description": "Any OSCAL-aware toolchain able to resolve the imported profile and record assessment results, for example IBM Compliance Trestle or the NIST oscal-cli.",
+          "status": {
+            "state": "operational"
+          }
+        }
+      ]
+    },
+    "tasks": [
+      {
+        "uuid": "2dbe45e4-ff47-4fe9-bd5a-c77aef6a14a5",
+        "type": "milestone",
+        "title": "Step 1 — Scope and role determination",
+        "description": "Determine whether the organisation is in scope under Article 2 and which role it holds under Article 3 for each system. Determine high-risk classification under Article 6, recording the Annex III use case engaged or the Article 6(3) derogation assessment. A wrong answer here invalidates every later step, so it is assessed first and separately.",
+        "associated-activities": [
+          {
+            "activity-uuid": "dddf6d8f-e788-4bd9-b0ca-23cd02cb0ac2",
+            "subjects": [
+              {
+                "type": "component",
+                "include-all": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "850e4a4f-2dd6-4969-ab3a-51bd2dc36446",
+        "type": "milestone",
+        "title": "Step 2 — Requirements evidence (Chapter III Section 2)",
+        "description": "Examine the risk management system (Article 9), data governance records (Article 10), Annex IV technical documentation (Article 11), logging capability (Article 12), instructions for use (Article 13), human-oversight design (Article 14), and declared accuracy, robustness and cybersecurity measures (Article 15). For each, record whether the artefact exists, whether it is current, and whether it is consistent with the others: inconsistency between the declared accuracy in Article 13 instructions and the Article 15 test results is the most common substantive finding."
+      },
+      {
+        "uuid": "9ba3abdb-af23-40a5-bd42-e42228c2cf7c",
+        "type": "milestone",
+        "title": "Step 3 — Operator obligations and market placement",
+        "description": "Examine the quality management system (Article 17), documentation and log retention (Articles 18 and 19), corrective-action procedure (Article 20), authority-cooperation procedure (Article 21), authorised representative mandate where the provider is established outside the Union (Article 22), value-chain agreements (Article 25), completed conformity assessment (Article 43), EU declaration of conformity (Article 47), CE marking (Article 48), and EU database registration (Article 49)."
+      },
+      {
+        "uuid": "c115e3d2-83ae-4982-be2c-c39875157ff6",
+        "type": "milestone",
+        "title": "Step 4 — Post-market and incident readiness",
+        "description": "Examine the post-market monitoring system and plan (Article 72) and the serious-incident reporting procedure (Article 73). Test the reporting procedure against all three statutory deadlines — 2 days, 10 days, 15 days — rather than the general one only. A procedure that meets the 15-day deadline but has no path to the 2-day critical-infrastructure deadline is not compliant."
+      },
+      {
+        "uuid": "402b9600-e9aa-4c5e-b250-19a0915ea6d9",
+        "type": "milestone",
+        "title": "Step 5 — Parameter completeness",
+        "description": "Confirm that every organisation-defined parameter left unset by the profile has been set by the organisation with a recorded rationale, and that no statutory parameter has been relaxed. An unset organisation-defined parameter is a finding, not an omission."
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "6d1a2f0e-3c7b-4a9e-8f11-2b4c6d8e0a35",
+          "title": "Consumer-supplied system security plan (a template example is provided)",
+          "description": "This assessment plan is written to be imported against the consumer's own OSCAL system security plan. A minimal template example is provided at docs/examples/template-system-security-plan.json; replace the reference below with your own SSP before running an assessment.",
+          "rlinks": [
+            {
+              "href": "../../docs/examples/template-system-security-plan.json",
+              "media-type": "application/oscal.ssp+json"
+            }
+          ]
+        },
+        {
+          "uuid": "89abfda4-58f4-47cc-b6d9-d7a397aa6005",
+          "title": "Regulation (EU) 2024/1689 (Artificial Intelligence Act) — Official Journal version",
+          "description": "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence. The Official Journal text is the sole authoritative source; this catalog is a derived, non-authoritative structural representation.",
+          "rlinks": [
+            {
+              "href": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng"
+            },
+            {
+              "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401689",
+              "media-type": "application/pdf"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

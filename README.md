@@ -9,7 +9,7 @@ way it already treats NIST SP 800-53 or ISO 27001: import a catalog, select a pr
 run an assessment, emit evidence.
 
 ```
-catalogs/eu-ai-act/catalog.json                        50 controls, Chapters I–XII
+catalogs/eu-ai-act/catalog.json                        50 controls, Chapters I–V, IX, XII
 profiles/prohibited-practices-and-ai-literacy/         15 controls · since 2025-02-02
 profiles/transparency-article-50/                      18 controls · from 2026-08-02
 profiles/gpai-model-provider/                          21 controls · since 2025-08-02

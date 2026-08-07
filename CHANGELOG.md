@@ -1,11 +1,11 @@
 # Changelog
 
-## 0.1.0 — unreleased
+## 0.1.0 — 2026-08-07
 
 First release. Regulation (EU) 2024/1689 as amended by Regulation (EU) 2026/1744
 (in force 27 July 2026).
 
-- OSCAL 1.1.2 catalog: 50 operator-facing controls, Chapters I–XII.
+- OSCAL 1.1.2 catalog: 50 operator-facing controls, Chapters I–V, IX and XII.
 - Five profiles: prohibited practices and AI literacy; Article 50 transparency; GPAI
   model provider; Annex III high-risk provider; Annex III high-risk deployer.
 - Assessment plan: five-step high-risk provider readiness assessment.

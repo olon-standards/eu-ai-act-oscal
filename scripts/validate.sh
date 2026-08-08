@@ -8,6 +8,9 @@ cd "$(dirname "$0")/.."
 echo "== trestle validate --all"
 trestle validate --all
 
+echo "== repository content checks"
+python3 scripts/check_content.py
+
 echo "== profile resolution"
 python3 - <<'PY'
 import pathlib, sys

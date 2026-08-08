@@ -41,10 +41,10 @@ material).
 |---|---|
 | `aia-3` | SME and small mid-cap (SMC) definitions added; "safety component" rewritten — feeds Article 6 classification |
 | `aia-4` | Softened: "take measures to support the development of AI literacy", replacing "ensure, to their best extent, a sufficient level of" |
-| `aia-10` | Read with the new Article 4a, which generalises the special-category-data permission beyond Article 10(5) |
+| `aia-10` | Article 10(5) deleted; the special-category-data permission and safeguards now sit in Article 4a |
 | `aia-11` | SMEs/SMCs may use a simplified Commission template for Annex IV (amendment applies 2026-08-02) |
 | `aia-15` | Cyber Resilience Act compliance deemed to satisfy the cybersecurity requirement (new Article 42(3)) |
-| `aia-17` | QMS proportionate to organisation size; simplified options for SMEs/SMCs (new Article 63(1)) |
+| `aia-17` | Article 17(2) amended so the QMS is proportionate to the provider's size |
 | `aia-27` | FRIA/DPIA cross-references clarified; AI Office to provide an automated template tool |
 | `aia-43` | Bodies notified under other harmonisation legislation apply by 28 January 2028 |
 | `aia-49` | Annex VIII §B registration reduced (points 7 and 9 deleted); Article 6(3) self-assessed systems still register |
@@ -83,11 +83,9 @@ correction worth an issue and a release.
 
 ## Provenance
 
-Article structure and titles for the base Regulation were verified on 2026-07-27 against
-the Official Journal text and cross-checked against per-article renderings. The amendment
-layer was verified the same day against the Official Journal text of Regulation (EU)
-2026/1744 for Articles 4, 4a, 5(1)(ba), 5(1)(bb), and against the recitals for the
-Article 113 dates; the full replacement text of Article 113 was not retrievable in the
-excerpt available and its dates are corroborated by three independent secondary analyses
-in agreement. Treat the Article 113 dates as high-confidence but re-check them against
-the consolidated text when EUR-Lex publishes it.
+Article structure and titles for the base Regulation were verified against the Official
+Journal text. On 9 August 2026 the amendment layer, including the full replacement text
+of Article 113, was re-checked against the Official Journal text of Regulation (EU)
+2026/1744. The application dates in this repository therefore come from the primary
+legal source rather than from secondary summaries. The ELI link above is the controlling
+source if this derived representation differs from the legislation.

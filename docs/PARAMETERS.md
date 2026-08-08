@@ -30,9 +30,9 @@ Organisation-defined parameters are deliberately left unset — an assessment th
 
 ## Notes
 
-- **`aia-4_prm_1`** (organisation-defined) — Organisation-defined. The Regulation sets no interval; select one proportionate to the rate of change in the deployed AI estate.
+- **`aia-4_prm_1`** (organisation-defined) — Organisation-defined. The Regulation sets no interval; select one proportionate to the rate of change in the deployed AI estate. An unset value is a readiness gap, not by itself proof of a legal breach.
 - **`aia-9_prm_1`** (organisation-defined) — Organisation-defined. Article 9 requires 'regular systematic review' without fixing an interval; select one proportionate to the system's risk profile and rate of change, and shorten it on material change or after a serious incident.
-- **`aia-11_prm_1`** (organisation-defined) — Organisation-defined. Article 11 requires the documentation be 'kept up to date'; select a review interval and additionally trigger review on every substantial modification.
+- **`aia-11_prm_1`** (organisation-defined) — Organisation-defined. Article 11 requires the documentation be 'kept up to date'; select a review interval and additionally trigger review on every substantial modification. The interval itself is not statutory.
 - **`aia-15_prm_1`** (organisation-defined) — Organisation-defined. Article 15(3) requires the metric to be declared in the instructions for use; it does not prescribe which metric.
 - **`aia-15_prm_2`** (organisation-defined) — Organisation-defined. The Regulation prescribes no numeric floor; the threshold must be appropriate to the intended purpose and consistent with what is declared under Article 13.
 - **`aia-15_prm_3`** (organisation-defined) — Organisation-defined. Select an interval proportionate to the threat model and rate of model or data change.

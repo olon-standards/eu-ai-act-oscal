@@ -52,7 +52,7 @@ link to the amending regulation. See [`docs/AMENDMENTS.md`](docs/AMENDMENTS.md).
 
 ```bash
 git clone https://github.com/olon-standards/eu-ai-act-oscal.git && cd eu-ai-act-oscal
-pip install compliance-trestle
+pip install -r requirements-dev.txt
 trestle validate --all          # 7 models, expect rc=0
 ```
 
@@ -97,13 +97,19 @@ The prohibitions profile is a precondition for all the others, not an alternativ
 
 ## Prior art
 
-There is, as far as we can establish, no other published OSCAL **catalog** for the EU AI
-Act. There is adjacent work worth knowing about: the
+There is, as far as we can establish after a repository search updated on 9 August 2026,
+no other published OSCAL **catalog** for the EU AI Act. This is a narrow claim, not a
+claim that no OSCAL work existed before this project. Adjacent work includes
 [Venturalitica SDK](https://github.com/Venturalitica/venturalitica-sdk) (Apache-2.0)
-carries an OSCAL assessment-plan contract over Articles 9–15 with property extensions,
+which carries an OSCAL assessment-plan contract over Articles 9–15 with property extensions,
 built as a research artifact. It is profile- and assessment-plan-shaped rather than a
 catalog, and covers seven articles to this catalog's fifty — but it got there first on
-the assessment-plan side and the claim here is narrower for it.
+the assessment-plan side. The
+[secops-ng framework](https://github.com/secops-ng/secops-ng-framework) also published
+EU AI Act OSCAL component-definition content before this catalog, mapping implemented
+requirements to controls. It is a component definition rather than an OSCAL catalog and
+predates the 2026 Omnibus amendments. Both are prior art and should be evaluated on their
+own terms.
 
 If you know of other OSCAL content for the Act, please open an issue; a wrong
 first-mover claim is worse than no claim.
@@ -117,8 +123,10 @@ They are recorded as OSCAL parameters with `constraints` explaining that they ma
 relaxed.
 
 Organisation-defined values are deliberately **left unset** — review intervals, accuracy
-metric and threshold, test frequencies. An assessment that finds them unset has found a
-real gap, which is the point. See [`docs/PARAMETERS.md`](docs/PARAMETERS.md).
+metric and threshold, test frequencies. They are implementation choices, not deadlines
+set by the Regulation. A consumer should define them before operational use; an unset
+value is a readiness gap, not by itself proof of a legal breach. See
+[`docs/PARAMETERS.md`](docs/PARAMETERS.md).
 
 ## Contributing
 
@@ -126,6 +134,10 @@ Corrections to article numbers, citations, dates and obligation statements are t
 valuable contributions here; accuracy is the whole product. See
 [`CONTRIBUTING.md`](CONTRIBUTING.md). Contributions are under the Apache-2.0 licence with
 a [DCO](DCO) sign-off.
+
+The status and scope of legal review are recorded in
+[`docs/LEGAL-REVIEW.md`](docs/LEGAL-REVIEW.md). Independent legal review remains an open
+release-quality gate and is not implied by automated validation.
 
 ## Maintainer
 

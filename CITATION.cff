@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this OSCAL catalog, please cite the repository and the exact release."
+title: "EU AI Act OSCAL catalog"
+type: dataset
+version: 0.1.1
+date-released: 2026-08-09
+authors:
+  - family-names: Makridis
+    given-names: Miltos
+repository-code: "https://github.com/olon-standards/eu-ai-act-oscal"
+url: "https://github.com/olon-standards/eu-ai-act-oscal/releases/tag/v0.1.1"
+license: Apache-2.0

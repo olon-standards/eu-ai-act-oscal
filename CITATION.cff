@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this OSCAL catalog, please cite the repository and the exact release."
+message: "If you use this OSCAL catalog, please cite the persistent identifier and the exact release."
 title: "EU AI Act OSCAL catalog"
 type: dataset
 version: 0.1.1
@@ -8,5 +8,18 @@ authors:
   - family-names: Makridis
     given-names: Miltos
 repository-code: "https://github.com/olon-standards/eu-ai-act-oscal"
-url: "https://github.com/olon-standards/eu-ai-act-oscal/releases/tag/v0.1.1"
+url: "https://w3id.org/eu-ai-act-oscal/"
+identifiers:
+  - type: url
+    value: "https://w3id.org/eu-ai-act-oscal/"
+    description: "Persistent identifier for the catalog. Cite this in preference to any GitHub URL — it survives a move of the repository, the organisation, or the host."
+  - type: url
+    value: "https://github.com/olon-standards/eu-ai-act-oscal/releases/tag/v0.1.1"
+    description: "GitHub release tag for this exact version."
 license: Apache-2.0
+keywords:
+  - EU AI Act
+  - OSCAL
+  - compliance-as-code
+  - regulatory compliance
+  - AI governance
